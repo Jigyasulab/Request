@@ -1,0 +1,97 @@
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book a Demo - School Registration</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Tahoma, Geneva, sans-serif;
+        }
+
+        body {
+            background: #ffffff;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            padding: 20px;
+        }
+
+        .container {
+            background: rgba(255, 255, 255, 0.9);
+            padding: 30px;
+            border-radius: 15px;
+            width: 100%;
+            max-width: 400px;
+            box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+
+        h2 {
+            color: #ed5251;
+            margin-bottom: 15px;
+        }
+
+        input, select, textarea {
+            width: 100%;
+            padding: 12px;
+            margin: 10px 0;
+            border: 1px solid #ccc;
+            border-radius: 8px;
+            font-size: 16px;
+            outline: none;
+        }
+
+        input, textarea {
+            background: rgba(255, 255, 255, 0.8);
+            color: #333;
+        }
+
+        input::placeholder, textarea::placeholder {
+            color: #666;
+        }
+
+        button {
+            background: linear-gradient(90deg, #ed5251, #ff7b00);
+            border: none;
+            padding: 14px;
+            width: 100%;
+            color: white;
+            font-size: 18px;
+            font-weight: bold;
+            border-radius: 8px;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+
+        button:hover {
+            background: linear-gradient(90deg, #d94342, #e67300);
+            transform: scale(1.05);
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h2>📚 Book a Demo</h2>
+        <form action="https://formspree.io/f/mjkybyjq" method="POST">
+            <input type="text" name="school_name" placeholder="School Name" required>
+            <input type="text" name="principal_name" placeholder="Principal Name" required>
+            <input type="email" name="email" placeholder="School Email" required>
+            <input type="tel" name="phone" placeholder="Contact Number" required>
+            <input type="date" name="demo_date" required>
+            <input type="text" name="address" placeholder="Address Line" required>
+            <input type="text" name="city" placeholder="City" required>
+            <input type="text" name="state" placeholder="State" required>
+            <input type="text" name="pin_code" placeholder="Pin Code" required>
+            <textarea name="message" placeholder="Message (Optional)" rows="3"></textarea>
+            <button type="submit">🚀 Request Demo</button>
+        </form>
+    </div>
+
+</body>
+</html>
